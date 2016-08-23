@@ -1,0 +1,17 @@
+.email-list .no-messages {
+	text-align: center;
+}
+.email-list .no-messages > div {
+	display: inline-block;
+	margin-top: 100px;
+}
+.email-list .no-messages h1 {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 25px;
+	text-align: start;
+}
+.email-list .no-messages .material-icons {
+	color: inherit !important;
+	font-size: 100px !important;
+}

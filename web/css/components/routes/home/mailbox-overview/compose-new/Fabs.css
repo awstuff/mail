@@ -1,0 +1,10 @@
+.compose-new-fabs .compose-new-fab {
+	position: fixed;
+	right: 23px;
+}
+.compose-new-fabs .compose-new-fab.create-new {
+	bottom: 23px;
+}
+.compose-new-fabs .compose-new-fab.pick-up-draft {
+	bottom: 102px;
+}

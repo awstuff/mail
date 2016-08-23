@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.add-account-dialog > div > div {
+	width: 90% !important;
+}
+.add-account-dialog > div > div > div > h3,
+.add-account-dialog > div > div > div > div:last-child {
+	border: 0 !important;
+}
+.add-account-dialog h3 + div {
+	font-size: 14px !important;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FileSaver test</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="Blob.js"></script>
+	<script src="FileSaver.min.js"></script>
+	<script>
+		$(function () {
+			$.ajax({
+				url : "http://localhost:9909/api/mailbox/mail/getattachment",
+				type : "post",
+				dataType : "json",
+				data : {
+					id: "fdf128e303a80ccd37163b4abb7dd601f88f960a4208702255e7032e4d201d89"
+				},
+				headers: {
+					...
+				},
+				success : function (res) {
+					console.log(res);
+
+					if (res.isBinary === true) {
+						res.content = new Uint8Array(res.content);
+
+						console.log("transformed: ", res.content);
+					}
+
+					var blob = new Blob([res.content], {
+						type: res.mime
+					});
+
+					saveAs(blob, res.fileName);
+				},
+				error : function () {
+					console.log("ERROR");
+				}
+			});
+		});
+	</script>
+</head>
+<body></body>
+</html>

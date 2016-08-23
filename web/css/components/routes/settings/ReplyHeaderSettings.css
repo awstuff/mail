@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+ul.reply-header-text-vars-doc {
+	margin: 0 0 1em 0;
+	padding: 0 24px;
+}
+.reply-header-text-vars-doc span {
+	font-style: italic;
+}

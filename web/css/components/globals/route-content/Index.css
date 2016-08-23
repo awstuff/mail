@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.route-content {
+	padding-top: 64px;
+}
+.route-content.drawer-open {
+	padding-left: 256px;
+}
+.route-content > div {
+	padding: 12px;
+}

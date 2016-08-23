@@ -1,0 +1,16 @@
+.account-entry {
+	padding-left: 60px !important;
+}
+.account-entry > .avatar {
+	line-height: 30px !important;
+	font-size: 15px !important;
+	height: 30px !important;
+	width: 30px !important;
+	top: 21px !important;
+}
+.account-entry .text-ellipsis {
+	max-width: 140px;
+}
+.title-bar-drawer .create-new-mailbox-item > div > div {
+	margin-left: 0 !important;	/* actually this should be handled via js code, but it does not work for some reason */
+}

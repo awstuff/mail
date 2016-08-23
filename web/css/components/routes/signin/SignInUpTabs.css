@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.sign-in-up-stepper {
+	padding: 12px 0;
+}
+.sign-in-up-stepper p {
+	margin-bottom: 0;
+}
+.sign-in-up-stepper .step-actions {
+	margin-top: 12px;
+}

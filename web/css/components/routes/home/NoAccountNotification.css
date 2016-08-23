@@ -1,0 +1,23 @@
+.no-account-notification {
+	text-align: center;
+}
+.no-account-notification > div {
+	display: inline-block;
+	margin-top: 100px;
+	text-align: start;
+}
+.no-account-notification h1 {
+	font-weight: 400;
+	font-size: 50px;
+	margin-bottom: 20px;
+	line-height: 50px;
+}
+.no-account-notification span {
+	font-size: 16px;
+	margin-top: 25px;
+	display: inline-block;
+}
+.no-account-notification svg {
+	fill: #777 !important;
+	vertical-align: bottom;
+}

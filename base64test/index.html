@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>base64 test</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+		$(function () {
+			var result = {};
+
+			$("#btn").click(function () {
+				var file = $("#file-input")[0].files[0];
+
+				result.filename = file.name;
+
+				var reader = new FileReader();
+
+				reader.onload = (function (file) {
+					return function (e) {
+						var directResult = e.target.result;
+
+						result.content = directResult.slice(directResult.indexOf(",") + 1);
+
+						console.log(result);
+
+//						$("#result-input").val(result.content);
+
+						$.ajax({
+							url : "http://localhost:9909/api/send/new",
+							type : "post",
+							dataType : "json",
+							data : {
+								"account" : 1,
+								"message" : {
+									...
+									"attachments" : [
+										{
+											"filename": result.filename,
+											"content" : result.content
+										}
+									]
+								}
+							},
+							headers: {
+								...
+							},
+							success : function (res) {
+								console.log(res);
+							},
+							error : function () {
+								console.log("ERROR");
+							}
+						});
+					};
+				})(file);
+
+				reader.readAsDataURL(file);
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="file" id="file-input">
+	<br>
+	<br>
+	<button id="btn">Encode</button>
+	<br>
+	<br>
+	<input type="text" id="result-input">
+</body>
+</html>

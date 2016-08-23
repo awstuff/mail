@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.accounts-settings .accounts-list > div > span {
+	font-size: 14px !important;
+}
+.accounts-settings .accounts-list > div > span > div > div {
+	padding: 16px 38px 16px 84px !important;
+}
+.accounts-settings .default-account {
+	font-weight: 400;
+	margin-left: 24px;
+	border: 1px solid #d81b60;
+	border-radius: 4px;
+	font-size: 0.9em;
+	/* text-transform: uppercase; */
+	color: #d81b60 !important;
+	fill: #d81b60 !important;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto !important;
+	height: auto !important;
+}
+.accounts-settings .account-label .text-muted {
+	margin-left: 12px;
+	font-style: italic;
+}

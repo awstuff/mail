@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.accounts-settings .accounts-list {
+	border: 1px solid rgb(217, 217, 217);
+	padding: 8px 0px;
+}

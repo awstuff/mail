@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.title-bar {
+	position: fixed !important;
+}
+.title-bar a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+.title-bar-drawer > div {
+	margin-top: 64px;
+	height: calc(100% - 64px) !important;
+}

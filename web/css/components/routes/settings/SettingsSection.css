@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.settings-section {
+	margin-bottom: 24px;
+}
+.settings-section:last-child {
+	margin-bottom: 0;
+}
+.settings-section h1 {
+	margin-bottom: 12px;
+}
+.settings-section p:first-of-type {
+	margin-top: 0;
+}
