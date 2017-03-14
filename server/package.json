@@ -10,7 +10,7 @@
   "scripts": {
     "start": "gulp"
   },
-  "author": "Adrian Wirth <adrian.wirth@yahoo.de>",
+  "author": "Adrian Wirth <dev@adrianwirth.com>",
   "license": "MIT",
   "dependencies": {
     "adm-zip": "^0.4.7",
